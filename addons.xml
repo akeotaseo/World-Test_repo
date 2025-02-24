@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.vnmedia" name="VN Media" version="5.7.0" provider-name="mkendo">
+<requires>
+  <import addon="xbmc.python" version="3.0.1"/>
+  <import addon="script.module.codequick" version="1.1.8"/>
+  <import addon="script.module.beautifulsoup4" version="1.12.0"/>
+  <import addon="script.module.cloudscraperkd" version="1.2.68"/>
+  <import addon="script.module.resolveurl" version="5.1.110"/>
+  <import addon="script.module.pycryptodome" version="3.4.3"/>
+  <import addon="inputstream.adaptive" version="20.0.0"/>
+  <import addon="plugin.video.youtube" version="0.0.1"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="mkendo.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.service" library="service.py"/>
+<extension point="xbmc.addon.metadata">
+  <reuselanguageinvoker>true</reuselanguageinvoker>
+  <summary lang="vi_VN">VN Media Omega</summary>
+  <description lang="vi_VN">Dữ liệu được máy tính thu thập tự động từ Internet</description>
+  <disclaimer lang="vi_VN">Dữ liệu được máy tính thu thập tự động từ Internet</disclaimer>
+  <platform>all</platform>
+  <language>vi</language>
+  <license>GPL-2.0-or-later</license>
+  <assets>
+    <icon>resources/icon.png</icon>
+    <fanart>resources/fanart.png</fanart>
+  </assets>
+  <news>Dữ liệu được máy tính thu thập tự động từ Internet</news>
+</extension>
+</addon>
+
+<addon id="kentestvn" name="kentestvn" version="0.0.5" provider-name="kentestvn">
+	<extension point="xbmc.addon.repository" name="kentestvn">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/kentestvn/kentestvn.github.io/master/addons.xml</info>
+			<checksum>https://one.one.one.one/cdn-cgi/trace</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kentestvn/kentestvn.github.io/master/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/siku2/kodi-repository/refs/heads/master/addons/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/siku2/kodi-repository/refs/heads/master/addons/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/siku2/kodi-repository/refs/heads/master/addons/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.github.com/Gujal00/GujalKodiWork/master/addons.xml</info>
+			<checksum>https://raw.github.com/Gujal00/GujalKodiWork/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/Gujal00/GujalKodiWork/master/zips/</datadir>
+		</dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Goldenfreddy0703/repository.otaku/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Goldenfreddy0703/repository.otaku/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Goldenfreddy0703/repository.otaku/master/repo/zips/</datadir>
+        </dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/peno64/repository.peno64/master/repo/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/peno64/repository.peno64/master/repo/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/peno64/repository.peno64/master/repo/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml</info>
+			<checksum>https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/jmooremcc/Repository.jmooremcc/master</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/5-star/repository.5star/raw/master/zips/</datadir>
+		</dir>
+		<dir minversion="19.0.0">
+			<info compressed="false">https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info-nexus.xml</info>
+			<checksum>https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info-nexus.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/cguZZman/repository.plugins/master/nexus/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="18.0">
+			<info>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml.crc</checksum>
+			<datadir>https://github.com/newt-sc/a4kSubtitles/archive</datadir>
+			<artdir>https://github.com/a4k-openproject/a4kSubtitles/releases/download/v0.0.13</artdir>
+		</dir>
+		<dir minversion="19.0.0">
+			<info compressed="false">https://github.com/CastagnaIT/repository.castagnait/raw/kodi/kodi19/addons.xml</info>
+			<checksum>https://github.com/CastagnaIT/repository.castagnait/raw/kodi/kodi19/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/CastagnaIT/repository.castagnait/raw/kodi/kodi19</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="19.0.0">
+            <info compressed="false">https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial/addons.xml</info>
+            <checksum>https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial/addons.xml.md5</checksum>
+            <datadir zip="true">https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial/zips</datadir>
+            <hashes>false</hashes>
+        </dir>
+		<dir>
+            <info>https://raw.githubusercontent.com/lekma/repository.lekma/master/addons/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/lekma/repository.lekma/master/addons/addons.xml.sha256</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/lekma/repository.lekma/master/addons</datadir>
+        </dir>
+        <dir minversion="19.0.0">
+            <info>https://raw.githubusercontent.com/lekma/repository.lekma/master/matrix/matrix.xml</info>
+            <checksum>https://raw.githubusercontent.com/lekma/repository.lekma/master/matrix/matrix.xml.sha256</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/lekma/repository.lekma/master/matrix</datadir>
+        </dir>
+        <dir minversion="20.0.0">
+            <info>https://raw.githubusercontent.com/lekma/repository.lekma/master/nexus/nexus.xml</info>
+            <checksum>https://raw.githubusercontent.com/lekma/repository.lekma/master/nexus/nexus.xml.sha256</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/lekma/repository.lekma/master/nexus</datadir>
+        </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>kentestvn</summary>
+		<description>kentestvn</description>
+		<disclaimer>kentestvn</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>icon.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="kodivietnam" name="Kodi Việt Nam" version="0.0.1" provider-name="bcp">
+	<extension point="xbmc.addon.repository" name="Kodi Việt Nam">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/bencooper1/kdv/master/addons.xml</info>
+			<checksum>https://random-word-api.herokuapp.com/word</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/bencooper1/kdv/master/repos/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/peno64/repository.peno64/master/repo/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/peno64/repository.peno64/master/repo/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/peno64/repository.peno64/master/repo/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml</info>
+			<checksum>https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/jmooremcc/Repository.jmooremcc/master</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/5-star/repository.5star/raw/master/zips/</datadir>
+		</dir>
+		<dir minversion="19.0.0">
+			<info compressed="false">https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info-nexus.xml</info>
+			<checksum>https://raw.githubusercontent.com/cguZZman/repository.plugins/master/addons-info-nexus.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/cguZZman/repository.plugins/master/nexus/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="18.0">
+			<info>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml.crc</checksum>
+			<datadir>https://github.com/newt-sc/a4kSubtitles/archive</datadir>
+			<artdir>https://github.com/a4k-openproject/a4kSubtitles/releases/download/v0.0.13</artdir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Kho tiện ích KODI Việt Nam</summary>
+		<description>Yêu cầu:
+			+ Kodi 20 trở lên.
+			+ Mở chế độ "Cập nhật các tiện ích từ Bất kỳ kho lưu trữ nào" bằng cách:
+			- Anh ngữ: Settings > System > Add-ons > Unknown sources > Any repositories
+			- Việt ngữ: Cài đặt > Hệ thống > Tiện ích > Không rõ nguồn gốc > Bất kỳ kho lưu trữ nào
+		</description>
+		<disclaimer>Nội dung được chia sẻ và lưu trữ bởi một ứng dụng bên thứ ba. Chúng tôi không sở hữu, không lưu trữ nội dung này và sẽ không chịu trách nhiệm cho các vấn đề liên quan. Đề nghị khán giả cân nhắc nội dung khi sử dụng tài nguyên.</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>icon.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="kodiVTM" name="Kodi VTM" version="0.0.1" provider-name="bcp-kentestvn">
+	<extension point="xbmc.addon.repository" name="Kodi VTM">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/bencooper1/kdv/master/addons.xml</info>
+			<checksum>https://random-word-api.herokuapp.com/word</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/bencooper1/kdv/master/repos/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/kentestvn/kentestvn.github.io/master/addons.xml</info>
+			<checksum>https://one.one.one.one/cdn-cgi/trace</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kentestvn/kentestvn.github.io/master/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Kho tiện ích KODI Việt Nam</summary>
+		<description>Yêu cầu:
+			+ Kodi 20 trở lên.
+			+ Mở chế độ "Cập nhật các tiện ích từ Bất kỳ kho lưu trữ nào" bằng cách:
+			- Anh ngữ: Settings > System > Add-ons > Unknown sources > Any repositories
+			- Việt ngữ: Cài đặt > Hệ thống > Tiện ích > Không rõ nguồn gốc > Bất kỳ kho lưu trữ nào
+		</description>
+		<disclaimer>Nội dung được chia sẻ và lưu trữ bởi một ứng dụng bên thứ ba. Chúng tôi không sở hữu, không lưu trữ nội dung này và sẽ không chịu trách nhiệm cho các vấn đề liên quan. Đề nghị khán giả cân nhắc nội dung khi sử dụng tài nguyên.</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>icon.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.video.vnmedia" name="VN Media" version="5.8.2" provider-name="Anonymous">
+<requires>
+  <import addon="xbmc.python" version="3.0.1"/>
+  <import addon="script.module.beautifulsoup4" version="1.12.0"/>
+  <import addon="inputstream.adaptive" version="20.0.0"/>
+  <import addon="plugin.video.youtube" version="0.0.1"/>
+  <import addon="script.module.six" />
+  <import addon="script.module.kodi-six" />
+  <import addon="script.module.python.twitch" optional="true" />
+  <import addon="plugin.googledrive" optional="true" />
+  <import addon="script.module.youtube.dl"/>
+  <import addon="script.module.htmlement"/>
+  <import addon="script.module.requests"/>
+  <import addon="script.module.infotagger"/>
+  <import addon="script.module.pyparsing" version="2.4.7"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="mkendo.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.service" library="service.py"/>
+<extension point="xbmc.addon.metadata">
+  <reuselanguageinvoker>true</reuselanguageinvoker>
+  <summary lang="vi_VN">VN Media Omega</summary>
+  <description lang="vi_VN">Dữ liệu được máy tính thu thập tự động từ Internet</description>
+  <disclaimer lang="vi_VN">Dữ liệu được máy tính thu thập tự động từ Internet</disclaimer>
+  <platform>all</platform>
+  <language>vi</language>
+  <license>GPL-2.0-or-later</license>
+  <assets>
+    <icon>resources/icon.png</icon>
+    <fanart>resources/fanart.png</fanart>
+  </assets>
+  <news>Dữ liệu được máy tính thu thập tự động từ Internet</news>
+</extension>
+</addon>
+
+<addon id="repository.WorldTest" name="World Test Repository" version="1.1.0" provider-name="World">
+	<extension point="xbmc.addon.repository" name="World Test Repository">
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/akeotaseo/World-Test_repo/main/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/akeotaseo/World-Test_repo/main/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/akeotaseo/World-Test_repo/main/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+			</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>World Omega Repository</summary>
+		<description>World Omega Repository</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.video.s4me" name="Stream4Me" version="1.7.8" provider-name="S4Me Team">
+  <requires>
+    <!-- <import addon="script.module.libtorrent" optional="true"/> -->
+    <import addon="metadata.themoviedb.org" optional="true"/>
+    <import addon="metadata.tvshows.themoviedb.org" optional="true"/>
+    <!-- <import addon="metadata.tvdb.com"/> -->
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Stream4Me is a Kodi add-on to search and watch contents on the web.</summary>
+    <summary lang="it">Stream4Me è un addon per Kodi per cercare e guardare contenuti sul web.</summary>
+    <assets>
+      <icon>logo.png</icon>
+    </assets>
+      <news>Benvenuto!</news>
+    <description lang="it">Naviga velocemente sul web e guarda i contenuti presenti</description>
+    <disclaimer>[COLOR red]The owners and submitters to this addon do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.[/COLOR]
+    [COLOR yellow]Kodi © is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation. Furthermore, any software, addons, or products offered by us will receive no support in official Kodi channels, including the Kodi forums and various social networks.[/COLOR]</disclaimer>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <website>https://stream4me.github.io/</website>
+    <forum>https://github.com/Stream4me/addon/issues</forum>
+    <source>https://github.com/Stream4me/addon</source>
+  </extension>
+  <extension point="xbmc.service" library="downloader_service.py" start="login|startup">
+  </extension>
+</addon>
+
+<addon id="script.module.cloudscraperkd" name="CloudScraper KODI" version="1.2.71" provider-name="mkendo">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.9.2"/>
+	<import addon="script.module.requests-toolbelt" version="0.9.1"/>
+	<import addon="script.module.pyparsing" version="2.4.7"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">cloudscraper</summary>
+    <description lang="en_gb">cloudscraper</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.codequick" name="CodeQuick" provider-name="willforde, mkendo" version="1.2.0">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.youtube.dl"/>
+        <import addon="script.module.htmlement"/>
+        <import addon="script.module.requests"/>
+		<import addon="script.module.infotagger"/>
+		<import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+	    <reuselanguageinvoker>true</reuselanguageinvoker>
+		<platform>all</platform>
+        <summary lang="en_GB">Framework for creating kodi add-on's.</summary>
+        <description lang="en_GB">Codequick is a framework for kodi add-on's. The goal of this framework is to simplify add-on development. This is achieved by reducing the amount of boilerplate code to a minimum, automating tasks like route dispatching and sort method selection. Ultimately allowing the developer to focus primarily on scraping content from websites and passing it to kodi.</description>
+        <license>GPL-3.0-or-later</license>
+        <source>https://github.com/willforde/script.module.codequick</source>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.module.requests" name="requests 2.31.0" version="22.31.0" provider-name="Python Software Foundation">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.certifi" version="2023.5.7"/>
+    <import addon="script.module.chardet" version="5.1.0"/>
+    <import addon="script.module.idna" version="3.4.0"/>
+    <import addon="script.module.urllib3" version="1.26.16+matrix.1"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Requests is an elegant and simple HTTP library for Python, built for human beings.</summary>
+    <description lang="en_GB">Requests is an elegant and simple HTTP library for Python, built for human beings.</description>
+    <license>Apache-2.0</license>
+    <platform>all</platform>
+    <website>https://requests.readthedocs.io/</website>
+    <source>https://github.com/psf/requests</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.requests-toolbelt" name="Requests Toolbelt" version="1.0.0" provider-name="mkendo">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+	<import addon="script.module.requests" version="2.9.2"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">requests-toolbelt</summary>
+    <description lang="en_gb">requests-toolbelt</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.urllib3" name="urllib3 2.2.3" version="22.2.3" provider-name="urllib3">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">urllib3 is a powerful, user-friendly HTTP client for Python</summary>
+    <description lang="en_GB">urllib3 is a powerful, user-friendly HTTP client for Python. Much of the Python ecosystem already uses urllib3 and you should too. urllib3 brings many critical features that are missing from the Python standard libraries</description>
+    <license>MIT</license>
+    <platform>all</platform>
+    <website>https://urllib3.readthedocs.io/</website>
+    <source>https://github.com/urllib3/urllib3</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+</addons>
