@@ -1,36 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.vnmedia" name="VN Media" version="5.7.0" provider-name="mkendo">
-<requires>
-  <import addon="xbmc.python" version="3.0.1"/>
-  <import addon="script.module.codequick" version="1.1.8"/>
-  <import addon="script.module.beautifulsoup4" version="1.12.0"/>
-  <import addon="script.module.cloudscraperkd" version="1.2.68"/>
-  <import addon="script.module.resolveurl" version="5.1.110"/>
-  <import addon="script.module.pycryptodome" version="3.4.3"/>
-  <import addon="inputstream.adaptive" version="20.0.0"/>
-  <import addon="plugin.video.youtube" version="0.0.1"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="mkendo.py">
-  <provides>video</provides>
-</extension>
-<extension point="xbmc.service" library="service.py"/>
-<extension point="xbmc.addon.metadata">
-  <reuselanguageinvoker>true</reuselanguageinvoker>
-  <summary lang="vi_VN">VN Media Omega</summary>
-  <description lang="vi_VN">Dữ liệu được máy tính thu thập tự động từ Internet</description>
-  <disclaimer lang="vi_VN">Dữ liệu được máy tính thu thập tự động từ Internet</disclaimer>
-  <platform>all</platform>
-  <language>vi</language>
-  <license>GPL-2.0-or-later</license>
-  <assets>
-    <icon>resources/icon.png</icon>
-    <fanart>resources/fanart.png</fanart>
-  </assets>
-  <news>Dữ liệu được máy tính thu thập tự động từ Internet</news>
-</extension>
-</addon>
-
 <addon id="kentestvn" name="kentestvn" version="0.0.5" provider-name="kentestvn">
 	<extension point="xbmc.addon.repository" name="kentestvn">
 		<dir>
@@ -225,6 +194,128 @@
 			<fanart>icon.jpg</fanart>
 		</assets>
 	</extension>
+</addon>
+
+<addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.1.6a" provider-name="bongdainfo">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests" />
+		<import addon="inputstream.adaptive" version="20.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="vi">bongdainfo</description>
+        <disclaimer lang="vi">bongdainfo</disclaimer>
+        <summary lang="vi">bongdainfo</summary>
+		<language>vi</language>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <assets>
+            <icon>icon.png</icon>
+			<fanart>icon.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.caheo" name="CAHEO" version="0.1.4" provider-name="caheo">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests"/>
+		<import addon="inputstream.adaptive" version="20.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="vi">caheo</description>
+        <disclaimer lang="vi">caheo</disclaimer>
+        <summary lang="vi">caheo</summary>
+		<language>vi</language>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <assets>
+            <icon>icon.png</icon>
+			<fanart>icon.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.socolive" name="SOCOlive" version="0.1.4" provider-name="socolive">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="vi">socolive</description>
+        <disclaimer lang="vi">socolive</disclaimer>
+        <summary lang="vi">socolive</summary>
+		<language>vi</language>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <assets>
+            <icon>icon.png</icon>
+			<fanart>icon.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.thapcam" name="ThapCam" version="0.2.3" provider-name="thapcam">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests"/>
+		<import addon="inputstream.adaptive" version="20.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="vi">thapcam</description>
+        <disclaimer lang="vi">thapcam</disclaimer>
+        <summary lang="vi">thapcam</summary>
+		<language>vi</language>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <assets>
+            <icon>icon.png</icon>
+			<fanart>icon.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.vnmedia" name="VN Media" version="5.7.0" provider-name="mkendo">
+<requires>
+  <import addon="xbmc.python" version="3.0.1"/>
+  <import addon="script.module.codequick" version="1.1.8"/>
+  <import addon="script.module.beautifulsoup4" version="1.12.0"/>
+  <import addon="script.module.cloudscraperkd" version="1.2.68"/>
+  <import addon="script.module.resolveurl" version="5.1.110"/>
+  <import addon="script.module.pycryptodome" version="3.4.3"/>
+  <import addon="inputstream.adaptive" version="20.0.0"/>
+  <import addon="plugin.video.youtube" version="0.0.1"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="mkendo.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.service" library="service.py"/>
+<extension point="xbmc.addon.metadata">
+  <reuselanguageinvoker>true</reuselanguageinvoker>
+  <summary lang="vi_VN">VN Media Omega</summary>
+  <description lang="vi_VN">Dữ liệu được máy tính thu thập tự động từ Internet</description>
+  <disclaimer lang="vi_VN">Dữ liệu được máy tính thu thập tự động từ Internet</disclaimer>
+  <platform>all</platform>
+  <language>vi</language>
+  <license>GPL-2.0-or-later</license>
+  <assets>
+    <icon>resources/icon.png</icon>
+    <fanart>resources/fanart.png</fanart>
+  </assets>
+  <news>Dữ liệu được máy tính thu thập tự động từ Internet</news>
+</extension>
 </addon>
 
 <addon id="plugin.video.vnmedia" name="VN Media" version="5.8.2" provider-name="Anonymous">
