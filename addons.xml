@@ -559,7 +559,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.requests" name="requests 2.31.0" version="22.31.0" provider-name="Python Software Foundation">
+<addon id="script.module.requests" name="requests" version="2.31.0" provider-name="Python Software Foundation">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.certifi" version="2023.5.7"/>
@@ -602,7 +602,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.urllib3" name="urllib3 2.2.3" version="22.2.3" provider-name="urllib3">
+<addon id="script.module.urllib3" name="urllib3" version="2.2.3" provider-name="urllib3">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
   </requires>
