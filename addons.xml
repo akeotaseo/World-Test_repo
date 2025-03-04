@@ -300,7 +300,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.1.6a" provider-name="bongdainfo">
+<addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.1.7a" provider-name="bongdainfo">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
 		<import addon="script.module.requests" />
@@ -323,7 +323,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.caheo" name="CAHEO" version="0.1.4" provider-name="caheo">
+<addon id="plugin.video.caheo" name="CAHEO" version="0.1.5a" provider-name="caheo">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
 		<import addon="script.module.requests"/>
@@ -344,6 +344,69 @@
 			<fanart>icon.png</fanart>
         </assets>
     </extension>
+</addon>
+
+<addon id="plugin.video.romanianpack"
+       name="[COLORlime]MRSP[/COLOR]"
+       version="1.1.77mod2"
+       provider-name="Sarsailă,Dan">
+  <requires>
+      <!-- <import addon="xbmc.python" version="2.1.0"/> -->
+    <import addon="script.module.resolveurl" version="5.0.06"/>
+    <import addon="plugin.video.elementum" optional="true" />
+    <import addon="script.module.torrent2http" />
+    <import addon="plugin.video.torrenter" optional="true" />
+    <import addon="repository.sarsaila" version="1.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+        <item library="resources/lib/context.py">
+            <label>Play with MRSP</label>
+            <visible>!String.StartsWith(ListItem.path,plugin://plugin.video.romanianpack/)+[String.IsEqual(ListItem.dbtype,episode)|String.IsEqual(ListItem.dbtype,movie)]</visible>
+        </item>
+    </menu>
+</extension>
+  <extension point="xbmc.service" name="mrsp.service" library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Site-uri cu filme subtitrate in limba romana</summary>
+    <description>Colectie de site-uri cu filme si seriale traduse in limba romana</description>
+    <platform>all</platform>
+    <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+    <disclaimer lang="ro">Autorul acestui supliment nu găzduiește conținutul găsit și nu are nicio legătură cu furnizorii de conținut. Acest supliment doar caută conținutul furnizat de site-uri web. Folosiți-l pe propria răspundere! </disclaimer>
+    <news>
+      1.1.75
+      - python 3.11 compatibil
+
+      1.1.73e
+      [code] revet small code to fix kodi 17.x
+
+      1.1.73d
+      [code] revert yield changes
+      [code] folosire mai ok pentru limite recente site, acum si pentru cautari aceeasi limita
+      1.1.73c
+      [code] fix of fix return generator error
+      1.1.73b
+      [code] fix return generator error
+      1.1.73
+      [code] schimbat append cu yield in torrent, fix imdb info
+       1.1.72b
+       [code] fix imdb info
+       1.1.72a
+       [code] fix imdb
+        1.1.72
+        [streams] fix hindilover
+        [streams] fix topfilmeonline
+        [code] fix imdb trailer
+
+    </news>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 
 <addon id="plugin.video.socolive" name="SOCOlive" version="0.1.4" provider-name="socolive">
@@ -581,6 +644,28 @@
   </extension>
 </addon>
 
+<addon id="script.module.requests" name="requests (2.31.0)" version="22.31.0" provider-name="Python Software Foundation">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.certifi" version="2023.5.7"/>
+    <import addon="script.module.chardet" version="5.1.0"/>
+    <import addon="script.module.idna" version="3.4.0"/>
+    <import addon="script.module.urllib3" version="1.26.16+matrix.1"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Requests is an elegant and simple HTTP library for Python, built for human beings.</summary>
+    <description lang="en_GB">Requests is an elegant and simple HTTP library for Python, built for human beings.</description>
+    <license>Apache-2.0</license>
+    <platform>all</platform>
+    <website>https://requests.readthedocs.io/</website>
+    <source>https://github.com/psf/requests</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="script.module.requests-toolbelt" name="Requests Toolbelt" version="1.0.0" provider-name="mkendo">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -603,6 +688,24 @@
 </addon>
 
 <addon id="script.module.urllib3" name="urllib3" version="2.2.3" provider-name="urllib3">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">urllib3 is a powerful, user-friendly HTTP client for Python</summary>
+    <description lang="en_GB">urllib3 is a powerful, user-friendly HTTP client for Python. Much of the Python ecosystem already uses urllib3 and you should too. urllib3 brings many critical features that are missing from the Python standard libraries</description>
+    <license>MIT</license>
+    <platform>all</platform>
+    <website>https://urllib3.readthedocs.io/</website>
+    <source>https://github.com/urllib3/urllib3</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.urllib3" name="urllib3 (2.2.3)" version="22.2.3" provider-name="urllib3">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
   </requires>
