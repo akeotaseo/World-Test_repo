@@ -260,7 +260,7 @@
 	</extension>
 </addon>
 
-<addon id="kodiVTM" name="Kodi VTM" version="0.0.2" provider-name="bcp-kentestvn">
+<addon id="kodiVTM" name="Kodi VTM" version="0.0.3" provider-name="bcp-kentestvn">
 	<extension point="xbmc.addon.repository" name="Kodi VTM">
 		<dir>
 			<info compressed="false">https://kodi.ddns.vn/addons.xml</info>
@@ -276,6 +276,11 @@
 			<info compressed="false">https://raw.githubusercontent.com/kentestvn/kentestvn.github.io/master/addons.xml</info>
 			<checksum>https://one.one.one.one/cdn-cgi/trace</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/kentestvn/kentestvn.github.io/master/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/kodivmf/vietmediaf_offical/master/addons.xml</info>
+			<checksum>https://one.one.one.one/cdn-cgi/trace</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodivmf/vietmediaf_offical/master/</datadir>
 		</dir>
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
@@ -300,7 +305,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.1.7a" provider-name="bongdainfo">
+<addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.1.7" provider-name="bongdainfo">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
 		<import addon="script.module.requests" />
@@ -421,29 +426,6 @@
         <description lang="vi">socolive</description>
         <disclaimer lang="vi">socolive</disclaimer>
         <summary lang="vi">socolive</summary>
-		<language>vi</language>
-        <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
-        <assets>
-            <icon>icon.png</icon>
-			<fanart>icon.png</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.thapcam" name="ThapCam" version="0.2.3" provider-name="thapcam">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-		<import addon="script.module.requests"/>
-		<import addon="inputstream.adaptive" version="20.0.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <description lang="vi">thapcam</description>
-        <disclaimer lang="vi">thapcam</disclaimer>
-        <summary lang="vi">thapcam</summary>
 		<language>vi</language>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
