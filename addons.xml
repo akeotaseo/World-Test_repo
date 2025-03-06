@@ -305,7 +305,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.1.7" provider-name="bongdainfo">
+<addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.1.7a" provider-name="bongdainfo">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
 		<import addon="script.module.requests" />
