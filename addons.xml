@@ -305,6 +305,42 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.blackcat2" name="BlackCat v2 (android-armv7)" version="1.3.3a" provider-name="korda">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.25.1" />
+        <import addon="script.module.beautifulsoup4" version="4.9.3" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ca_ES">Llista i reprodueix enllaços fent servir el complement Horus.</summary>
+        <summary lang="en_GB">List and play links via the Horus addon.</summary>
+        <summary lang="es_ES">Lista y reproduce enlaces a través del addon Horus.</summary>
+        <description lang="ca_ES">BlackCat utilitza Horus com a passarel·la per reproduir enllaços i també és necessari tindre instal·lat AceStream.</description>
+        <description lang="en_GB">BlackCat uses Horus to play AceStream links and you also need to have AceStream installed.</description>
+        <description lang="es_ES">BlackCat usa Horus para reproducir enlaces y también es necesario tener instalado AceStream.</description>
+        <disclaimer lang="ca_ES">[COLOR red]BlackCat només recopila enllaços publicats a pàgines web disponibles al públic general.[/COLOR]</disclaimer>
+        <disclaimer lang="en_GB">[COLOR red]BlackCat only collects links posted on websites that are available to the general public.[/COLOR]</disclaimer>
+        <disclaimer lang="es_ES">[COLOR red]BlackCat solo recopila enlaces publicados en páginas web disponibles para el público en general.[/COLOR]</disclaimer>
+        <platform>aandroid-armv7</platform>
+        <assets>
+            <icon>icon.jpg</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>
+            ~[1.3.2] Minor bug fix and add events.
+            ~[1.3.2] Minor bug fix and add directs.
+            ~[1.3.1] Change ls+.
+            ~[1.3.0] Add ls+ and 3cp support.
+            ~[1.2.9] HDN minor fix.
+            ~[1.2.7] Bug fix SUP.
+            ~[1.0.9] First release.
+        </news>
+    </extension>
+</addon>
+
 <addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.1.7a" provider-name="bongdainfo">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
