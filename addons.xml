@@ -382,6 +382,30 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.prezzidentialsports"
+       name="Prezzidential Sports"
+       version="1.0.0"
+       provider-name="Mr P">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+<import addon="script.module.resolveurl" version="2.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+<assets>
+        <icon>resources/logo.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+    </assets>
+    <summary lang="en">Watch Live Sports The Prezzidential Way</summary>
+    <description lang="en">Prezzidential Sports Is The Home Of Live Sports
+Supported By PPV.LAND.
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.romanianpack"
        name="[COLORlime]MRSP[/COLOR]"
        version="1.1.77mod2"
