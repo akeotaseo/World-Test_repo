@@ -336,7 +336,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.1.9a" provider-name="bongdainfo">
+<addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.2.0a" provider-name="bongdainfo">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
 		<import addon="script.module.requests" />
@@ -359,7 +359,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.caheo" name="CAHEO" version="0.1.7" provider-name="caheo">
+<addon id="plugin.video.caheo" name="CAHEO" version="0.1.8" provider-name="caheo">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
 		<import addon="script.module.requests"/>
@@ -469,7 +469,7 @@ Supported By PPV.LAND.
   </extension>
 </addon>
 
-<addon id="plugin.video.socolive" name="SOCOlive" version="0.1.6" provider-name="socolive">
+<addon id="plugin.video.socolive" name="SOCOlive" version="0.1.7" provider-name="socolive">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
 		<import addon="script.module.requests"/>
