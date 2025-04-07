@@ -382,6 +382,36 @@
     </extension>
 </addon>
 
+<addon
+	id="plugin.video.macvod" version="1.995" name="[COLORyellow]XC MAC M3U[/COLOR]" provider-name="1x|iNKuBo|bee">
+<requires>
+    	<import addon="script.module.resolveurl"/>
+	    <import addon="script.module.requests"/>
+		<import addon="script.module.six"/>
+
+		<import addon="script.module.web-pdb" />
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+
+	<extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+		<summary lang="en">Personal addon for IPTV</summary>
+		<description lang="es">This addon provides IPTV for personal and private use only</description>
+		<website>https://github.com/</website>
+		<license>GPL 3.0</license>
+		<platform>all</platform>
+		<disclaimer lang="es">The author of this addon makes not responsible for the use of it</disclaimer>
+	<assets>
+        <icon>icon.gif</icon>
+        <fanart>fanart.png</fanart>
+    </assets>
+		<language>en</language>
+	</extension>
+
+</addon>
+
 <addon id="plugin.video.prezzidentialsports"
        name="Prezzidential Sports"
        version="1.0.0"
@@ -466,6 +496,49 @@ Supported By PPV.LAND.
     <assets>
         <icon>icon.png</icon>
     </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.s4me" name="Stream4Me" version="1.7.8" provider-name="S4Me Team">
+  <requires>
+    <!-- <import addon="script.module.libtorrent" optional="true"/> -->
+    <import addon="metadata.themoviedb.org" optional="true"/>
+    <import addon="metadata.tvshows.themoviedb.org" optional="true"/>
+    <!-- <import addon="metadata.tvdb.com"/> -->
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+      <item library="contextmenu.py">
+        <label>90001</label>
+        <visible>!String.StartsWith(ListItem.FileNameAndPath, plugin://plugin.video.s4me/) + [ String.IsEqual(ListItem.dbtype, tvshow) | String.IsEqual(ListItem.dbtype, movie) | String.IsEqual(ListItem.dbtype, season) | String.IsEqual(ListItem.dbtype, episode) ]</visible>
+      </item>
+    </menu>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Stream4Me is a Kodi add-on to search and watch contents on the web.</summary>
+    <summary lang="it">Stream4Me è un addon per Kodi per cercare e guardare contenuti sul web.</summary>
+    <assets>
+      <icon>resources/media/logo.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+      <screenshot>resources/media/screenshot-1.png</screenshot>
+      <screenshot>resources/media/screenshot-2.png</screenshot>
+      <screenshot>resources/media/screenshot-3.png</screenshot>
+    </assets>
+      <news>- Riaperto addon
+</news>
+    <description lang="it">Naviga velocemente sul web e guarda i contenuti presenti</description>
+    <disclaimer>[COLOR red]The owners and submitters to this addon do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.[/COLOR]
+    [COLOR yellow]Kodi © is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation. Furthermore, any software, addons, or products offered by us will receive no support in official Kodi channels, including the Kodi forums and various social networks.[/COLOR]</disclaimer>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <website>https://stream4me.github.io/</website>
+    <source>https://github.com/stream4me/addon</source>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login|startup">
   </extension>
 </addon>
 
@@ -611,6 +684,40 @@ Supported By PPV.LAND.
     </extension>
 </addon>
 
+<addon id="repository.TechNEWSology" name="TechNEWSology Repository" version="2.2.0" provider-name="TechNEWSology">
+	<extension point="xbmc.addon.repository" name="TechNEWSology Repository">
+			<dir minversion="17.9.9" maxversion="19.9.9">
+				<info compressed="false">https://raw.githubusercontent.com/TechNEWSologyBuilder/tech/main/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/TechNEWSologyBuilder/tech/main/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/TechNEWSologyBuilder/tech/main/</datadir>
+			</dir>
+			<dir minversion="19.9.9">
+				<info compressed="false">https://raw.githubusercontent.com/TechNEWSologyBuilder/omega/main/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/TechNEWSologyBuilder/omega/main/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/TechNEWSologyBuilder/omega/main/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/TechNEWSologyBuilds/Builds/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/TechNEWSologyBuilds/Builds/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/TechNEWSologyBuilds/Builds/master/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+			</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>TechNEWSology Repository</summary>
+		<description>TechNEWSology Build Repo</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="repository.WorldTest" name="World Test Repository" version="1.1.0" provider-name="World">
 	<extension point="xbmc.addon.repository" name="World Test Repository">
 			<dir>
@@ -633,36 +740,6 @@ Supported By PPV.LAND.
 			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
-</addon>
-
-<addon id="plugin.video.s4me" name="Stream4Me" version="1.7.8" provider-name="S4Me Team">
-  <requires>
-    <!-- <import addon="script.module.libtorrent" optional="true"/> -->
-    <import addon="metadata.themoviedb.org" optional="true"/>
-    <import addon="metadata.tvshows.themoviedb.org" optional="true"/>
-    <!-- <import addon="metadata.tvdb.com"/> -->
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Stream4Me is a Kodi add-on to search and watch contents on the web.</summary>
-    <summary lang="it">Stream4Me è un addon per Kodi per cercare e guardare contenuti sul web.</summary>
-    <assets>
-      <icon>logo.png</icon>
-    </assets>
-      <news>Benvenuto!</news>
-    <description lang="it">Naviga velocemente sul web e guarda i contenuti presenti</description>
-    <disclaimer>[COLOR red]The owners and submitters to this addon do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.[/COLOR]
-    [COLOR yellow]Kodi © is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation. Furthermore, any software, addons, or products offered by us will receive no support in official Kodi channels, including the Kodi forums and various social networks.[/COLOR]</disclaimer>
-    <platform>all</platform>
-    <license>GNU GPL v3</license>
-    <website>https://stream4me.github.io/</website>
-    <forum>https://github.com/Stream4me/addon/issues</forum>
-    <source>https://github.com/Stream4me/addon</source>
-  </extension>
-  <extension point="xbmc.service" library="downloader_service.py" start="login|startup">
-  </extension>
 </addon>
 
 <addon id="script.module.cloudscraperkd" name="CloudScraper KODI" version="1.2.71" provider-name="mkendo">
