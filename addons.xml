@@ -410,7 +410,7 @@
 </addon>
 
 <addon
-	id="plugin.video.macvod" version="1.995" name="[COLORyellow]XC MAC M3U[/COLOR]" provider-name="1x|iNKuBo|bee">
+	id="plugin.video.macvod" version="1.995a" name="[COLORyellow]XC MAC M3U[/COLOR]" provider-name="1x|iNKuBo|bee|Tk">
 <requires>
     	<import addon="script.module.resolveurl"/>
 	    <import addon="script.module.requests"/>
@@ -496,6 +496,70 @@ Supported By PPV.LAND.
     <disclaimer lang="ro">Autorul acestui supliment nu găzduiește conținutul găsit și nu are nicio legătură cu furnizorii de conținut. Acest supliment doar caută conținutul furnizat de site-uri web. Folosiți-l pe propria răspundere! </disclaimer>
     <news>
       1.1.75
+      - python 3.11 compatibil
+
+      1.1.73e
+      [code] revet small code to fix kodi 17.x
+
+      1.1.73d
+      [code] revert yield changes
+      [code] folosire mai ok pentru limite recente site, acum si pentru cautari aceeasi limita
+      1.1.73c
+      [code] fix of fix return generator error
+      1.1.73b
+      [code] fix return generator error
+      1.1.73
+      [code] schimbat append cu yield in torrent, fix imdb info
+       1.1.72b
+       [code] fix imdb info
+       1.1.72a
+       [code] fix imdb
+        1.1.72
+        [streams] fix hindilover
+        [streams] fix topfilmeonline
+        [code] fix imdb trailer
+
+    </news>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.romanianpack"
+       name="[COLORlime]MRSP[/COLOR]"
+       version="1.1.78"
+       provider-name="[COLOR yellow]Sarsailă[/COLOR]">
+ <requires>
+     <import addon="xbmc.python" version="3.0.1"/>
+    <import addon="script.module.resolveurl" />
+    <import addon="script.module.torrent2http" />
+ </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+        <item library="resources/lib/context.py">
+            <label>Play with MRSP</label>
+            <visible>!String.StartsWith(ListItem.path,plugin://plugin.video.romanianpack/)+[String.IsEqual(ListItem.dbtype,episode)|String.IsEqual(ListItem.dbtype,movie)]</visible>
+        </item>
+    </menu>
+</extension>
+  <extension point="xbmc.service" name="mrsp.service" library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Site-uri cu filme subtitrate in limba romana</summary>
+    <description>Colectie de site-uri cu filme si seriale traduse in limba romana</description>
+    <platform>all</platform>
+    <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+    <disclaimer lang="ro">Autorul acestui supliment nu găzduiește conținutul găsit și nu are nicio legătură cu furnizorii de conținut. Acest supliment doar caută conținutul furnizat de site-uri web. Folosiți-l pe propria răspundere! </disclaimer>
+    <news>
+        1.1.78
+      -eliminate depedente care nu sant necesare
+      -elimanti provedori si surse care nu functioneaza
+
+        1.1.75
       - python 3.11 compatibil
 
       1.1.73e
