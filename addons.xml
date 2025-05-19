@@ -925,6 +925,40 @@ Supported By PPV.LAND.
   </extension>
 </addon>
 
+<addon id="script.module.bottle" name="Bottle" version="0.13.2" provider-name="Marcel Hellkamp">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en_GB">Fast and simple WSGI-framework for small web-applications</summary>
+    <description lang="en_GB">Bottle is a fast and simple micro-framework for small web applications. It offers request dispatching (Routes) with url parameter support, templates, a built-in HTTP Server and adapters for many third party WSGI/HTTP-server and template engines - all in a single file and with no dependencies other than the Python Standard Library.</description>
+    <license>MIT</license>
+    <source>https://github.com/bottlepy/bottle</source>
+    <website>https://bottlepy.org/docs/dev/</website>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.bottle" name="Bottle" version="00.13.2" provider-name="Marcel Hellkamp">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en_GB">Fast and simple WSGI-framework for small web-applications</summary>
+    <description lang="en_GB">Bottle is a fast and simple micro-framework for small web applications. It offers request dispatching (Routes) with url parameter support, templates, a built-in HTTP Server and adapters for many third party WSGI/HTTP-server and template engines - all in a single file and with no dependencies other than the Python Standard Library.</description>
+    <license>MIT</license>
+    <source>https://github.com/bottlepy/bottle</source>
+    <website>https://bottlepy.org/docs/dev/</website>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="script.module.cloudscraperkd" name="CloudScraper KODI" version="1.2.71" provider-name="mkendo">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -1057,6 +1091,22 @@ Supported By PPV.LAND.
         <assets>
             <icon>icon.png</icon>
         </assets>
+    </extension>
+</addon>
+
+<addon id="script.module.torrent2http" name="torrent2http" version="0.1.1" provider-name="[COLOR yellow]anteo,apoyotech[/COLOR]">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <summary lang="en">Downloads torrents and share it over HTTP</summary>
+        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
+        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP. Основан на библиотеке LibTorrent.</description>
+        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
+        <email>anteo@academ.org</email>
     </extension>
 </addon>
 
