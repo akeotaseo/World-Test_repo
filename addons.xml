@@ -71,21 +71,6 @@
             <datadir zip="true">https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial/zips</datadir>
             <hashes>false</hashes>
         </dir>
-		<dir>
-            <info>https://raw.githubusercontent.com/lekma/repository.lekma/master/addons/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/lekma/repository.lekma/master/addons/addons.xml.sha256</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/lekma/repository.lekma/master/addons</datadir>
-        </dir>
-        <dir minversion="19.0.0">
-            <info>https://raw.githubusercontent.com/lekma/repository.lekma/master/matrix/matrix.xml</info>
-            <checksum>https://raw.githubusercontent.com/lekma/repository.lekma/master/matrix/matrix.xml.sha256</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/lekma/repository.lekma/master/matrix</datadir>
-        </dir>
-        <dir minversion="20.0.0">
-            <info>https://raw.githubusercontent.com/lekma/repository.lekma/master/nexus/nexus.xml</info>
-            <checksum>https://raw.githubusercontent.com/lekma/repository.lekma/master/nexus/nexus.xml.sha256</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/lekma/repository.lekma/master/nexus</datadir>
-        </dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>kentestvn</summary>
@@ -273,6 +258,11 @@
 			<datadir zip="true">https://raw.githubusercontent.com/kodivmf/vietmediaf_offical/master/</datadir>
 		</dir>
 		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/kentestvn/kentestvn.github.io/master/addons.xml</info>
+			<checksum>https://one.one.one.one/cdn-cgi/trace</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kentestvn/kentestvn.github.io/master/</datadir>
+		</dir>
+		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
@@ -331,7 +321,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.2.2a" provider-name="bongdainfo">
+<addon id="plugin.video.bongdainfo" name="XOILACZ" version="0.2.3a" provider-name="bongdainfo">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
 		<import addon="script.module.requests" version="1.0"/>
