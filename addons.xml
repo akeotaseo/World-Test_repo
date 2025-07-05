@@ -764,6 +764,44 @@ Supported By PPV.LAND.
 </extension>
 </addon>
 
+<addon id="plugin.video.whiskeyblues" version="0.0.1" name="Whiskey Blues" provider-name="kropi">
+    <requires>
+        <import addon="xbmc.addon" version="16.1.000"/>
+        <import addon="script.module.tulip" version="2.8.2" />
+        <import addon="plugin.video.youtube" version="6.8.2"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en_GB">Whiskey Blues addon for Kodi</summary>
+        <summary lang="en_GR">Πρόσθετο Whiskey Blues  για το Kodi</summary>
+        <description lang="en_GB">Whiskey Blues - youtube channel</description>
+        <description lang="el_GR">Whiskey Blues - Κανάλι youtube </description>
+        <disclaimer lang="en_GB">This addon offers content available in Greece and is not published nor endorsed</disclaimer>
+        <disclaimer lang="el_GR">Το πρόσθετο αυτό προσφέρει περιεχόμενο διαθέσιμο στην Ελλάδα και δεν έχει δημοσιευθεί ούτε εγκριθεί</disclaimer>
+        <language>en el</language>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <source></source>
+        <website></website>
+        <size>226000</size>
+        <news>[B]0.0.1[/B]  05/07/2025 by kropi
+- Πρώτη έκδοση.
+- Ο κώδικας είναι δανεισμένος από τα addons του Twilight0 and manalab</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+<!--            <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>-->
+<!--            <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>-->
+<!--            <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>-->
+        </assets>
+        <!--<forum></forum>-->
+        <!--<email></email>-->
+    </extension>
+</addon>
+
 <addon id="program.easyplayerswitch" name="Easy Player Switch" provider-name="DigiTalking" version="1.1.0">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -1057,6 +1095,39 @@ Supported By PPV.LAND.
         <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP. Основан на библиотеке LibTorrent.</description>
         <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
         <email>anteo@academ.org</email>
+    </extension>
+</addon>
+
+<addon id="script.module.tulip" name="Tulip Library" version="3.1.1" provider-name="Twilight0">
+    <requires>
+        <import addon="xbmc.addon" version="16.1.000"/>
+        <import addon="script.module.kodi-six" version="0.0.2"/>
+        <import addon="script.module.certifi" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Tulip library with helper functions for Kodi and its forks</summary>
+        <description lang="en">Tulip library combines the best elements from Lambda's "lamlib" and tknorris's shared modules. Also includes various enhancements, newer and improved functions and Python 3 compatibility, though the latter is largely untested. Can also be as standalone utils</description>
+        <platform>all</platform>
+        <license>GPL-3.0-only</license>
+        <source>https://github.com/Twilight0/script.module.tulip</source>
+        <news>[B]3.1.X[/B]
+- Update user agent strings
+- Added a few more utilities
+- Add offscreen boolean parameter for ListItem
+- Bug fixes
+
+[B]3.0.X[/B]
+- Utilize certifi for net module
+- Add ability to save locally unencrypted m3u8 ts video content
+- Update user agent strings
+- Change the way kodi version is obtained
+- Add limit and username/password auth to net module
+- Convert url bytes object to string (python 3 only)</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon>
 
