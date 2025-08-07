@@ -359,7 +359,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.caheo" name="CAHEO" version="0.1.9" provider-name="caheo">
+<addon id="plugin.video.caheo" name="CAHEO" version="0.2.0" provider-name="caheo">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
 		<import addon="script.module.requests"/>
