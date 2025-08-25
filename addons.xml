@@ -617,6 +617,19 @@ Supported By PPV.LAND.
 	</extension>
 </addon>
 
+<addon id="script.module.acctview" name="acctviewer" version="2.4.9" provider-name="Zaxxon709">
+    <extension point="xbmc.python.pluginsource" library="default.py">
+    </extension>
+    <extension point="xbmc.python.module" library="resources" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">View Authorized Accounts</summary>
+        <description lang="en">Account Manager Dependency</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://</source>
+    </extension>
+</addon>
+
 <addon id="script.module.bottle" name="Bottle" version="0.13.2" provider-name="Marcel Hellkamp">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
