@@ -848,7 +848,7 @@ Supported By PPV.LAND.
   </extension>
 </addon>
 
-<addon id="script.module.six" name="six (1.16.0+matrix.1)" version="11.16.0+matrix.1)" provider-name="Benjamin Peterson">
+<addon id="script.module.six" name="six (1.16.0+matrix.1)" version="11.16.0+matrix.1" provider-name="Benjamin Peterson">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
   </requires>
