@@ -99,43 +99,17 @@
 	</extension>
 </addon>
 
-<addon id="plugin.program.exportimport" name="Kodi's Little Helper" version="1.0.4" provider-name="Diamond Build">
-
-
-
+<addon id="plugin.program.exportimport" name="Kodi's Little Helper" version="1.0.5" provider-name="Diamond Build">
   <requires>
-
-
     <import addon="xbmc.python" version="3.0.0"/>
-
-
     <import addon="script.module.requests"/>
-
-
   </requires>
-
-
-
   <extension point="xbmc.python.pluginsource" library="default.py">
-
-
     <provides>video executable</provides>
-
-
   </extension>
-
-
-
   <extension point="xbmc.service" library="service.py" start="startup"/>
-
-
-
   <extension point="xbmc.addon.metadata">
-
-
     <summary>Helper tool to extend Kodi’s File Manager with add-on/build installation, import/export, backups, and sources management.</summary>
-
-
     <description>
 This is not a wizard. It’s a helper/extension of Kodi’s File Manager designed to handle tasks that File Manager alone cannot.
 
@@ -167,26 +141,12 @@ What it is NOT:
 Special Note (Advanced):
 If you want a full build to be cross-platform (Windows, Android, etc.), the package must be created with a wizard (e.g. Simple Wizard) so it includes the binary file. This tool will install the package’s files just fine, but Kodi also needs the wizard installed to apply the binary update. For light updates, no wizard is needed.
     </description>
-
-
     <platform>all</platform>
-
-
     <assets>
-
-
       <icon>icon.png</icon>
-
-
       <fanart>fanart.png</fanart>
-
-
     </assets>
-
-
   </extension>
-
-
 </addon>
 
 <addon id="plugin.video.blackcat2" name="BlackCat v2 (android-armv7)" version="1.3.3a" provider-name="korda">
@@ -699,7 +659,7 @@ Supported By PPV.LAND.
   </extension>
 </addon>
 
-<addon id="script.module.bottle" name="Bottle" version="00.13.2" provider-name="Marcel Hellkamp">
+<addon id="script.module.bottle" name="Bottle (0.13.2)" version="00.13.2" provider-name="Marcel Hellkamp">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -710,6 +670,116 @@ Supported By PPV.LAND.
     <license>MIT</license>
     <source>https://github.com/bottlepy/bottle</source>
     <website>https://bottlepy.org/docs/dev/</website>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.certifi" name="certifi" version="2023.5.7" provider-name="Certifi">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Certifi: Python SSL Certificates</summary>
+    <description lang="en_GB">Certifi is a carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. It has been extracted from the Requests project.</description>
+    <license>MPL-2.0</license>
+    <website>https://github.com/certifi/python-certifi</website>
+    <source>https://github.com/certifi/python-certifi</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.certifi" name="certifi  (2023.5.7)" version="22023.5.7" provider-name="Certifi">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Certifi: Python SSL Certificates</summary>
+    <description lang="en_GB">Certifi is a carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. It has been extracted from the Requests project.</description>
+    <license>MPL-2.0</license>
+    <website>https://github.com/certifi/python-certifi</website>
+    <source>https://github.com/certifi/python-certifi</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.chardet" name="chardet" version="5.1.0" provider-name="Character Encoding Detector">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">The Universal Character Encoding Detector</summary>
+    <description lang="en_GB">The Universal Character Encoding Detector</description>
+    <license>LGPL-2.1</license>
+    <platform>all</platform>
+    <website>https://chardet.readthedocs.io/</website>
+    <source>https://github.com/chardet/chardet</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.chardet" name="chardet (5.1.0)" version="55.1.0" provider-name="Character Encoding Detector">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">The Universal Character Encoding Detector</summary>
+    <description lang="en_GB">The Universal Character Encoding Detector</description>
+    <license>LGPL-2.1</license>
+    <platform>all</platform>
+    <website>https://chardet.readthedocs.io/</website>
+    <source>https://github.com/chardet/chardet</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.pysocks" name="PySocks" version="1.7.0+matrix.1" provider-name="anorov">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">A SOCKS proxy client and wrapper for Python</summary>
+    <description lang="en_GB">PySocks lets you send traffic through SOCKS and HTTP proxy servers. It is a modern fork of SocksiPy with bug fixes and extra features.</description>
+    <platform>all</platform>
+    <language></language>
+    <license>BSD</license>
+    <forum></forum>
+    <website>https://github.com/Anorov/PySocks</website>
+    <source>https://github.com/Anorov/PySocks</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.pysocks" name="PySocks (1.7.0+matrix.1)" version="11.7.0+matrix.1" provider-name="anorov">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">A SOCKS proxy client and wrapper for Python</summary>
+    <description lang="en_GB">PySocks lets you send traffic through SOCKS and HTTP proxy servers. It is a modern fork of SocksiPy with bug fixes and extra features.</description>
+    <platform>all</platform>
+    <language></language>
+    <license>BSD</license>
+    <forum></forum>
+    <website>https://github.com/Anorov/PySocks</website>
+    <source>https://github.com/Anorov/PySocks</source>
     <assets>
       <icon>icon.png</icon>
     </assets>
@@ -754,6 +824,42 @@ Supported By PPV.LAND.
     <platform>all</platform>
     <website>https://requests.readthedocs.io/</website>
     <source>https://github.com/psf/requests</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.six" name="six" version="1.16.0+matrix.1" provider-name="Benjamin Peterson">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python 2 and 3 compatibility utilities</summary>
+    <description lang="en_GB">Python 2 and 3 compatibility utilities</description>
+    <license>MIT</license>
+    <platform>all</platform>
+    <website>https://github.com/benjaminp/six</website>
+    <source>https://github.com/benjaminp/six</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.six" name="six (1.16.0+matrix.1)" version="11.16.0+matrix.1)" provider-name="Benjamin Peterson">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python 2 and 3 compatibility utilities</summary>
+    <description lang="en_GB">Python 2 and 3 compatibility utilities</description>
+    <license>MIT</license>
+    <platform>all</platform>
+    <website>https://github.com/benjaminp/six</website>
+    <source>https://github.com/benjaminp/six</source>
     <assets>
       <icon>resources/icon.png</icon>
     </assets>

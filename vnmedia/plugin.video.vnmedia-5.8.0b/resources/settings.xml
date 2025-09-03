@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+<category label="Hệ thống">
+    <setting label="Khởi động cùng hệ thống" type="bool" id="auto_run" default="false"/>
+	<setting label="URL Góc Chia Sẻ" id="TextURL" type="text" default="https://tinyurl.com/datcine"/>
+	<setting label="18+" type="bool" id="kenh18" default="false"/>
+</category>
+<category label="FSHARE">
+    <setting label="Khoá Play Fshare" type="bool" id="block_play_fs" default="false"/>
+    <setting label="Tải Fshare" type="bool" id="taifshare" default="false"/>
+	<setting label="Lịch sử xem" type="bool" id="historyfs" default="true"/>
+	<setting label="Thư mục lưu tệp" type="folder" id="dl_folder" source="" option="writeable"/>
+    <setting label="Máy chủ CodePlay" type="select" id="shorten_host" values="tinyurl.com|hqth.me|bit.ly|gg.gg|ow.ly|cutt.ly|tiny.cc|bom.so|t.ly|s.id|rebrandly.com|b.link" default="tinyurl.com"/>
+	<setting label="Tài khoản Fshare (Email)" type="text" id="username" default=""/>
+    <setting label="Mật khẩu Fshare" type="text" id="password" option="hidden"  enable="!eq(-1,)" default=""/>
+</category>
+<category label="Truyền hình">
+	<setting label="My List IPTV" id="myiptv" type="text" default=""/>
+</category>
+</settings>
