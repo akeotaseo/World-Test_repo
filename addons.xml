@@ -99,7 +99,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.program.exportimport" name="Kodi's Little Helper" version="1.0.5" provider-name="Diamond Build">
+<addon id="plugin.program.exportimport" name="Kodi's Little Helper" version="1.0.6" provider-name="Diamond Build">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests"/>
@@ -147,6 +147,24 @@ If you want a full build to be cross-platform (Windows, Android, etc.), the pack
       <fanart>fanart.png</fanart>
     </assets>
   </extension>
+</addon>
+
+<addon id="plugin.program.ytapikeymanager" name="YouTube API Key Manager" version="1.0.1" provider-name="Diamond Build">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>YouTube API key and or Login, Backup, Restore and Export</summary>
+        <description>Back up and restore YouTube API keys and login credentials independently. Export backups to other locations.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="plugin.video.blackcat2" name="BlackCat v2 (android-armv7)" version="1.3.3a" provider-name="korda">
@@ -972,5 +990,26 @@ Supported By PPV.LAND.
       <icon>resources/icon.png</icon>
     </assets>
   </extension>
+</addon>
+
+<addon id="plugin.program.setapikeys"
+       name="setapikeys"
+       version="0.0.1"
+       provider-name="[COLOR fffa9900]apoyotech[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  <summary>Escribe tus API keys en varios add-ons (hardcoded)</summary>
+  <license>GPL-3.0-or-later</license>
+  <platform>all</platform>
+ <assets>
+   <icon>icon.png</icon>
+   <fanart>fanart.jpg</fanart>
+ </assets>
+</extension>
 </addon>
 </addons>
