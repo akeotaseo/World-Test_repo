@@ -99,7 +99,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.program.exportimport" name="Kodi Directory, File and Backup Tool" version="1.0.8" provider-name="Diamond Build">
+<addon id="plugin.program.exportimport" name="Kodi's Little Helper" version="1.0.9" provider-name="Diamond Build">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
