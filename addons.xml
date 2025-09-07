@@ -511,6 +511,28 @@ Supported By PPV.LAND.
     </extension>
 </addon>
 
+<addon id="plugin.video.vixmovie" name="VixMovies" version="1.1" provider-name="1x & Geamanu">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.25.1"/>
+    <import addon="plugin.video.themoviedb.helper" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">VixMovie Video Plugin</summary>
+    <description lang="en_GB">Watch movies from VixMovie source.</description>
+    <disclaimer lang="en_GB"></disclaimer>
+    <platform>all</platform>
+    <license>MIT</license>
+    <assets>
+      <icon>icon.png</icon>
+	  <fanart>resources/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.video.whiskeyblues" version="0.0.1a" name="Whiskey Blues" provider-name="kropi">
     <requires>
         <import addon="xbmc.addon" version="16.1.000"/>
