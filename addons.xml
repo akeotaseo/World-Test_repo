@@ -826,28 +826,6 @@ Supported By PPV.LAND.
   </extension>
 </addon>
 
-<addon id="script.module.requests" name="requests (2.31.0)" version="22.31.0" provider-name="Python Software Foundation">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.certifi" version="2023.5.7"/>
-    <import addon="script.module.chardet" version="5.1.0"/>
-    <import addon="script.module.idna" version="3.4.0"/>
-    <import addon="script.module.urllib3" version="1.26.16+matrix.1"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Requests is an elegant and simple HTTP library for Python, built for human beings.</summary>
-    <description lang="en_GB">Requests is an elegant and simple HTTP library for Python, built for human beings.</description>
-    <license>Apache-2.0</license>
-    <platform>all</platform>
-    <website>https://requests.readthedocs.io/</website>
-    <source>https://github.com/psf/requests</source>
-    <assets>
-      <icon>resources/icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
 <addon id="script.module.six" name="six" version="1.16.0+matrix.1" provider-name="Benjamin Peterson">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
@@ -989,30 +967,6 @@ Supported By PPV.LAND.
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
-  </extension>
-</addon>
-
-<addon id="plugin.program.setapikeys"
-       name="setapikeys"
-       version="0.0.3"
-       provider-name="[COLOR fffa9900]apoyotech[/COLOR]">
-  <requires>
-    <import addon="xbmc.python" version="3.0.1"/>
-  </requires>
-
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-   <description>Permite guardar de forma automatica api keys OMDb, MDBList, SubDL y RPDB en los add-ons o skins compatibles.</description>
-   <reuselanguageinvoker>false</reuselanguageinvoker>
-   <license>GPL-3.0-or-later</license>
-   <platform>all</platform>
-   <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-   </assets>
   </extension>
 </addon>
 </addons>
