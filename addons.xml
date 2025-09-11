@@ -149,6 +149,30 @@ If you want a full build to be cross-platform (Windows, Android, etc.), the pack
   </extension>
 </addon>
 
+<addon id="plugin.program.setapikeys"
+       name="setapikeys"
+       version="0.0.3"
+       provider-name="[COLOR fffa9900]apoyotech[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+  </requires>
+
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+   <description>Permite guardar de forma automatica api keys OMDb, MDBList, SubDL y RPDB en los add-ons o skins compatibles.</description>
+   <reuselanguageinvoker>false</reuselanguageinvoker>
+   <license>GPL-3.0-or-later</license>
+   <platform>all</platform>
+   <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+   </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.program.ytapikeymanager" name="YouTube API Key Manager" version="1.0.1" provider-name="Diamond Build">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
