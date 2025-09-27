@@ -648,6 +648,18 @@ Supported By PPV.LAND.
   </extension>
 </addon>
 
+<addon id="script.free99.artwork" version="1.0" name="[COLOR orange]Free99 Artwork[/COLOR]" provider-name="JewBMX">
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Free99 Artwork</summary>
+        <description>Free99 Artwork</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="script.module.torrent2http" name="torrent2http" version="1.4.1+matrix" provider-name="anteo,DiMartino,-=Vd=-">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
