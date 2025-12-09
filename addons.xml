@@ -99,6 +99,53 @@
 	</extension>
 </addon>
 
+<addon id="plugin.program.kodiswitcher" name="Kodi Switcher" version="1.0.0" provider-name="Lovell M.">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_US">Switch between different Kodi build configurations</summary>
+        <description lang="en_US">This addon allows you to switch between different Kodi data directories (builds) stored on your Android device. It modifies the xbmc_env.properties file to point to your selected build and restarts Kodi.</description>
+        <disclaimer lang="en_US">Use at your own risk. Make sure you have backups of your Kodi configurations.</disclaimer>
+        <license>GPL-3.0-only</license>
+        <forum></forum>
+        <website></website>
+        <email></email>
+        <source></source>
+        <news>v1.0.0 (2025-10-08)
+- Initial release
+- Scan for Kodi directories in /sdcard/
+- Switch between builds
+- Automatically quit Kodi after switching
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.program.kronos.cast" name="Kronos Cast" version="3.0.3" provider-name="Kronos Team">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="gui.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>LAN Casting Tool for Kodi</summary>
+        <description>Kronos Cast allows you to cast MP4/MP3, YouTube links, from any Web Browser to Kronos over LAN. Includes VIP Upload, delete files.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/media/k_logo.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.program.setapikeys"
        name="setapikeys"
        version="0.0.3"
@@ -121,6 +168,28 @@
       <fanart>fanart.jpg</fanart>
    </assets>
   </extension>
+</addon>
+
+<addon id="plugin.video.90phuttv" version="1.0.26" name="90PhutTV" provider-name="hoaivnpt">
+<requires>
+  <import addon="xbmc.python" version="3.0.1"/>
+  <import addon="script.module.requests"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en_GB">90PHUT TV</summary>
+  <description lang="en_GB">Xem trực tiếp bóng đá từ các nguồn 90PHUT, CAKHIA, SAOKE...</description>
+  <disclaimer lang="en_GB">Provided by hoaivnpt</disclaimer>
+  <license>GPL-3.0-only	</license>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+  </assets>
+  <news>Ver 1.0.26: Sửa lỗi SaokeTV (30/9/2025).
+  </news>
+</extension>
 </addon>
 
 <addon id="plugin.video.blackcat2" name="BlackCat v2 (android-armv7)" version="1.3.3a" provider-name="korda">
@@ -524,6 +593,28 @@ Supported By PPV.LAND.
     </extension>
 </addon>
 
+<addon id="plugin.video.urlplayer"
+       name="URL Player"
+       version="1.0.0"
+       provider-name="Gemini">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.resolveurl"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">URL Player</summary>
+    <description lang="en">A simple plugin to input a video URL and resolve it for playback using ResolveURL.</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.video.whiskeyblues" version="0.0.1b" name="Whiskey Blues" provider-name="kropi">
     <requires>
         <import addon="xbmc.addon" version="16.1.000"/>
@@ -560,6 +651,35 @@ Supported By PPV.LAND.
         <!--<forum></forum>-->
         <!--<email></email>-->
     </extension>
+</addon>
+
+<addon id="plugin.video.youtubemovieslatino"
+       name="YouTube Movies Latino"
+       version="1.0.0"
+       provider-name="wetdreams69">
+
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.18.4"/>
+        <import addon="plugin.video.youtube" version="7.0.1"/>
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="es">Muestra películas de YouTube</summary>
+        <description lang="es">Este addon lista películas de YouTube.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <license>MIT</license>
+        <language>es</language>
+        <website>https://github.com/wetdreams69/plugin.video.youtubemovieslatino</website>
+    </extension>
+
 </addon>
 
 <addon id="program.easyplayerswitch" name="Easy Player Switch" provider-name="DigiTalking" version="1.1.0">
