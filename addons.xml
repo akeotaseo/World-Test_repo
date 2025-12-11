@@ -593,6 +593,29 @@ Supported By PPV.LAND.
     </extension>
 </addon>
 
+<addon id="plugin.video.thang.iptv" name="Bóng đá IPTV" version="1.0.0" provider-name="thangmath">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests"/>
+		<import addon="inputstream.adaptive" version="20.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="vi">Nguyễn Đức Thăng</description>
+        <disclaimer lang="vi">0374201353</disclaimer>
+        <summary lang="vi">thangmath</summary>
+		<language>vi</language>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>special://userdata/fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.urlplayer"
        name="URL Player"
        version="1.0.0"
