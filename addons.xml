@@ -593,7 +593,7 @@ Supported By PPV.LAND.
     </extension>
 </addon>
 
-<addon id="plugin.video.thang.iptv" name="Bóng đá IPTV" version="1.0.0" provider-name="thangmath">
+<addon id="plugin.video.thang.thethao" name="Thể thao" version="1.0.0" provider-name="thangmath">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
 		<import addon="script.module.requests"/>
@@ -603,15 +603,14 @@ Supported By PPV.LAND.
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <description lang="vi">Nguyễn Đức Thăng</description>
-        <disclaimer lang="vi">0374201353</disclaimer>
-        <summary lang="vi">thangmath</summary>
+        <summary lang="vi">Nguyễn Đức Thăng</summary>
+        <description lang="vi">0374201353</description>
 		<language>vi</language>
         <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
+        <license>109004940284 Vietinbank</license>
         <assets>
             <icon>icon.png</icon>
-            <fanart>special://userdata/fanart.png</fanart>
+            <fanart>icon.png</fanart>
         </assets>
     </extension>
 </addon>
