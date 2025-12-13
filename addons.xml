@@ -148,7 +148,7 @@
 
 <addon id="plugin.program.setapikeys"
        name="setapikeys"
-       version="0.0.3"
+       version="0.0.6"
        provider-name="[COLOR fffa9900]apoyotech[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
@@ -159,7 +159,7 @@
   </extension>
 
   <extension point="xbmc.addon.metadata">
-   <description>Permite guardar de forma automatica api keys OMDb, MDBList, SubDL y RPDB en los add-ons o skins compatibles.</description>
+   <description>[COLOR ff00fa9a]Permite guardar de forma automatica api keys como, por ejemplo OMDb,MDBlist,SubDL,subsource y RPDB en los add-ons o skins compatibles.[/COLOR]</description>
    <reuselanguageinvoker>false</reuselanguageinvoker>
    <license>GPL-3.0-or-later</license>
    <platform>all</platform>
