@@ -593,6 +593,74 @@ Supported By PPV.LAND.
     </extension>
 </addon>
 
+<addon id="plugin.video.thang.18json" name="18+JSON" version="1.0.0" provider-name="thangmath">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests"/>
+		<import addon="inputstream.adaptive" version="20.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="vi">Nguyễn Đức Thăng</summary>
+        <description lang="vi">0374201353</description>
+		<language>vi</language>
+        <platform>all</platform>
+        <license>109004940284 Vietinbank</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>icon.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.thang.bongda" name="Xem Bóng Đá" version="1.0.0" provider-name="thangmath">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests"/>
+		<import addon="inputstream.adaptive" version="20.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Nguyễn Đức Thăng - 0374201353</summary>
+        <description>Ứng dụng xem bóng đá trên Thập Cẩm TV (tạo nhóm riêng rất tiện xem) & rất nhiều kênh khác. Thêm hightlight 24h.
+            Bản chỉnh sửa, xoá bớt các nội dung lỗi gây khó chịu cho người dùng.
+        </description>
+		<language>vi</language>
+        <platform>all</platform>
+        <license>Donate cho tôi: Nguyễn Đức Thăng 109004940284 Vietinbank</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>icon.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.thang.json18" name="18+JSON" version="1.0.0" provider-name="thangmath">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests"/>
+		<import addon="inputstream.adaptive" version="20.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="vi">Nguyễn Đức Thăng</summary>
+        <description lang="vi">0374201353</description>
+		<language>vi</language>
+        <platform>all</platform>
+        <license>109004940284 Vietinbank</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>icon.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.thang.thethao" name="Thể thao" version="1.0.0" provider-name="thangmath">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
