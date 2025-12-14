@@ -639,6 +639,30 @@ Supported By PPV.LAND.
     </extension>
 </addon>
 
+<addon id="plugin.video.thang.json" name="Giải trí JSON" version="1.0.0" provider-name="thangmath">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests"/>
+		<import addon="inputstream.adaptive" version="20.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Nguyễn Đức Thăng - 0374201353</summary>
+        <description>Ứng dụng xem phim, bóng đá, truyền hình qua link JSON tổng hợp trên mạng
+            Bản chỉnh sửa, cập nhật những link dùng được
+        </description>
+		<language>vi</language>
+        <platform>all</platform>
+        <license>Donate cho tôi: Nguyễn Đức Thăng 109004940284 Vietinbank</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>icon.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.thang.json18" name="18+JSON" version="1.0.0" provider-name="thangmath">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
@@ -676,6 +700,30 @@ Supported By PPV.LAND.
 		<language>vi</language>
         <platform>all</platform>
         <license>109004940284 Vietinbank</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>icon.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.thang.truyenhinhthethao" name="Tin tức Thể thao Truyền hình TV" version="1.0.0" provider-name="thangmath">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+		<import addon="script.module.requests"/>
+		<import addon="inputstream.adaptive" version="20.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Nguyễn Đức Thăng - 03774201353</summary>
+        <description>Ứng dụng tổng hợp rất nhiều link IPTV cần thiết để xem TV và các video tin tức, thể thao tổng hợp.
+               Bản chỉnh sửa lại nội dung list cho thuận tiện hơn.
+        </description>
+		<language>vi</language>
+        <platform>all</platform>
+        <license>Donate cho tôi: Nguyễn Đức Thăng 109004940284 Vietinbank</license>
         <assets>
             <icon>icon.png</icon>
             <fanart>icon.png</fanart>
