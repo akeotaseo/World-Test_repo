@@ -146,37 +146,6 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.rdtplayer"
-       name=" RD Player and Manager"
-       version="1.1.1"
-       provider-name="Diamond Build">
-
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.beautifulsoup4" />
-    </requires>
-
-    <!-- Main plugin entry point -->
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-
-    <!-- Background Real-Debrid refresh service -->
-    <extension point="xbmc.service" library="service.py" start="startup"/>
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Real-Debrid Player and Tools (Cloud & History)</summary>
-        <description lang="en">Browse your Real-Debrid cloud and history using just an API key.</description>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.png</fanart>
-        </assets>
-    </extension>
-
-</addon>
-
 <addon id="plugin.program.setapikeys"
        name="setapikeys"
        version="0.0.6"
