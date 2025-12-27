@@ -1,0 +1,14 @@
+{
+    "name"              : "[B][COLOR white]You[/COLOR][/B][B][COLOR red]Tube[/COLOR][/B] [COLOR white]-[/COLOR] [B][COLOR lime]Τρέιλερ[/COLOR][/B] [COLOR white]( Free Api Key )[/COLOR] αναζήτηση...",
+    "icon"              : "https://www.kodi-guide.com/wp-content/uploads/2022/10/duff-you-kodi-addon-icon.jpg",
+    "plugin"            : "plugin.video.macvod",
+    "api_language"      : "en-US",
+    "priority"          : 2,
+    "is_resolvable"     : "true",
+    "play_movie"        : [
+                            "plugin://plugin.video.macvod/?action=Buscar_search&extra&page&plot&thumbnail=https%3a%2f%2fi.imgur.com%2fV4gm6sn.jpg&title=%5bCOLOR%20gold%5d%ce%91%ce%bd%ce%b1%ce%b6%ce%ae%cf%84%ce%b7%cf%83%ce%b7%20YouTube%5b%2fCOLOR%5d&url=https%3a%2f%2fwww.youtube.com%2fresults%3fsearch_query%3d",
+                            {"keyboard": "{clearname} {year} Gr subs Trailer"},
+                            {"dialog": "clearname"},
+                            {"dialog": "clearname"}
+                          ]
+}
