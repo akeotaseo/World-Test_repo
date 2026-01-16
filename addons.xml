@@ -228,7 +228,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.cinema_city" version="0.0.9" name="Cinema City" provider-name="Cinema City">
+<addon id="plugin.video.cinema_city" version="0.1.0" name="Cinema City" provider-name="Cinema City">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.requests" version="2.22.0"/>
