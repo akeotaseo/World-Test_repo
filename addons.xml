@@ -99,7 +99,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.program.kodiswitcher" name="Kodi Switcher" version="1.0.0" provider-name="Lovell M.">
+<addon id="plugin.program.buildswitcher" name="Build Switcher" version="1.1.2" provider-name="Lovell M.">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -108,19 +108,13 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary lang="en_US">Switch between different Kodi build configurations</summary>
-        <description lang="en_US">This addon allows you to switch between different Kodi data directories (builds) stored on your Android device. It modifies the xbmc_env.properties file to point to your selected build and restarts Kodi.</description>
-        <disclaimer lang="en_US">Use at your own risk. Make sure you have backups of your Kodi configurations.</disclaimer>
+        <summary lang="en_US">Switch between Kodi builds</summary>
+        <description lang="en_US">Switch between different Kodi data directories on your device. Creates or modifies xbmc_env.properties to manage build configurations.</description>
+        <disclaimer lang="en_US">Use at your own risk. Backup your configurations first.</disclaimer>
         <license>GPL-3.0-only</license>
-        <forum></forum>
-        <website></website>
-        <email></email>
-        <source></source>
-        <news>v1.0.0 (2025-10-08)
-- Initial release
-- Scan for Kodi directories in /sdcard/
-- Switch between builds
-- Automatically quit Kodi after switching
+        <news>v1.1.0 (2026-02-14)
+- Option to create fresh kodi instance
+
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -298,7 +292,7 @@ Kindly note that GreekTV By don24crk is not an official part of the media player
   </extension>
 </addon>
 
-<addon id="plugin.video.hublive" name="HubLive" version="1.0.6" provider-name="1X si Geamanu">
+<addon id="plugin.video.hublive" name="HubLive" version="1.0.7" provider-name="1X si Geamanu">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests"/>
