@@ -238,6 +238,32 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.deportes"
+       name="Deportes IPFS"
+       version="1.0.1"
+       provider-name="Deportes">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Canales de deportes - Lista IPFS/Kodi</summary>
+        <description>Addon para reproducir la lista de canales deportivos desde IPFS. Incluye La Liga, Champions, DAZN, Movistar Deportes, Formula 1, NBA, UFC y más.
+
+IMPORTANTE: Requiere instalar previamente:
+- script.module.horus (obligatorio para reproducir los canales)
+- AceStream (obligatorio para la reproducción de streams)</description>
+        <platform>all</platform>
+        <language>es</language>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.EventCast"
        name="EventCast"
        version="1.0.8"
