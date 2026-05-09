@@ -498,7 +498,7 @@ provider-name="ElSupremo">
         <assets><icon>icon.png</icon></assets> </extension>
 </addon>
 
-<addon id="plugin.video.nada_que_ver" name="Nada que ver" version="1.5.4" provider-name="jlatorreaguilar">
+<addon id="plugin.video.nada_que_ver" name="Nada que ver" version="1.5.5" provider-name="jlatorreaguilar">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
