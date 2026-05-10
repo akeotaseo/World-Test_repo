@@ -903,6 +903,29 @@ Supported By PPV.LAND.
 	</extension>
 </addon>
 
+<addon id="repository.vseryi4kodi"
+       name="VSeryi4Kodi Repository"
+       version="1.0.0"
+       provider-name="VSeryi">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="VSeryi4Kodi Repository">
+        <dir>
+            <info compressed="false">https://vseryi.github.io/kodi/addons.xml</info>
+            <checksum>https://vseryi.github.io/kodi/addons.xml.md5</checksum>
+            <datadir zip="true">https://vseryi.github.io/kodi/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Repository for VSeryi Kodi add-ons</summary>
+        <summary lang="es_ES">Repositorio para los add-ons de Kodi de VSeryi</summary>
+        <description lang="en_GB">Install and update VSeryi Kodi add-ons (Stremio2Kodi, Emoji Fonts) from this repository.</description>
+        <description lang="es_ES">Instala y actualiza los add-ons de Kodi de VSeryi (Stremio2Kodi, Emoji Fonts) desde este repositorio.</description>
+    </extension>
+</addon>
+
 <addon id="repository.WorldTest" name="World Test Repository" version="1.1.0" provider-name="World">
 	<extension point="xbmc.addon.repository" name="World Test Repository">
 			<dir>
