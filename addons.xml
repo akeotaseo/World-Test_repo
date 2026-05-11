@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="repository.kadrplusde"
+       name="KadrPlus DE Repository"
+       version="1.0.1"
+       provider-name="Kadr+">
+    <extension point="xbmc.addon.repository" name="KadrPlus DE Repository">
+        <dir>
+            <info compressed="false">https://kadrplus.github.io/KadrPlusDE-repo/addons.xml</info>
+            <checksum>https://kadrplus.github.io/KadrPlusDE-repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://kadrplus.github.io/KadrPlusDE-repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de">Offizielles Repository für Kadr+ (deutsche Version)</summary>
+        <summary lang="en">Official repository for Kadr+ (German version)</summary>
+        <assets><icon>icon.png</icon></assets>
+    </extension>
+</addon>
+
 <addon id="kentestvn" name="kentestvn" version="0.0.6" provider-name="kentestvn">
 	<extension point="xbmc.addon.repository" name="kentestvn">
 		<dir>
