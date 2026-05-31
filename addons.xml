@@ -860,6 +860,49 @@ Supported By PPV.LAND.
     </extension>
 </addon>
 
+<addon id="repository.don24crkrepository1" name="Don24crk Repository" version="1.0" provider-name="don24crk">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+	<extension point="xbmc.addon.repository" name="Don24crk Repository">
+            <dir minversion="21.0.0" maxversion="22.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/don24crk/don24crk-repository1/refs/heads/main/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/don24crk/don24crk-repository1/refs/heads/main/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="false">https://raw.githubusercontent.com/don24crk/don24crk-repository1/refs/heads/main/repo/zips</datadir>
+
+        </dir>
+            <dir minversion="21.0.0" maxversion="22.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/don24crk/don24crk-repository1/refs/heads/main/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/don24crk/don24crk-repository1/refs/heads/main/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/don24crk/don24crk-repository1/raw/refs/heads/main/repo/zips/plugin.video.GreekTV/plugin.video.GreekTV-v1.5.zip</datadir>
+
+        </dir>
+            <dir minversion="21.0.0" maxversion="22.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/don24crk/don24crk-repository1/refs/heads/main/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/don24crk/don24crk-repository1/refs/heads/main/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/don24crk/don24crk-repository1/raw/refs/heads/main/repo/zips/plugin.video.AliveTR/plugin.video.AliveTR.zip</datadir>
+
+        </dir>
+            <dir minversion="21.0.0" maxversion="22.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/don24crk/don24crk-repository1/refs/heads/main/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/don24crk/don24crk-repository1/refs/heads/main/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/don24crk/don24crk-repository1/raw/refs/heads/main/repo/zips/plugin.video.dailymotion_com/plugin.video.dailymotion_com-2.4.4.zip</datadir>
+
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>repository.don24crkrepository1</summary>
+        <description>don24crk repositoy</description>
+        <disclaimer>repository of GreekTV Addon</disclaimer>
+		<website>https://don24crk.github.io/don24crk-repository1</website>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="repository.TechNEWSology" name="TechNEWSology Repository" version="2.2.0" provider-name="TechNEWSology">
 	<extension point="xbmc.addon.repository" name="TechNEWSology Repository">
 			<dir minversion="17.9.9" maxversion="19.9.9">
