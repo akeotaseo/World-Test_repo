@@ -749,7 +749,7 @@ Supported By PPV.LAND.
   </extension>
 </addon>
 
-<addon id="plugin.video.whiskeyblues" version="0.0.2a" name="Whiskey Blues" provider-name="kropi">
+<addon id="plugin.video.whiskeyblues" version="0.0.2b" name="Whiskey Blues" provider-name="kropi">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.tulip3" version="3.1.2" />
