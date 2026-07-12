@@ -860,6 +860,33 @@ Supported By PPV.LAND.
     </extension>
 </addon>
 
+<addon id="repository.alkoflix" name="Dépôt alkoFlix" version="1.0.1" provider-name="Les alKODIques">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Dépôt alkoFlix">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/alKODIque/repository.alkoflix/master/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">Dépôt officiel alkoFlix pour Kodi.</summary>
+        <summary lang="en">Official alkoFlix repository for Kodi.</summary>
+        <description lang="fr">Installe et met à jour automatiquement alkoFlix et les extensions Kodi associées.</description>
+        <description lang="en">Install and automatically update alkoFlix and related Kodi add-ons.</description>
+        <license>GPL-3.0</license>
+        <news lang="fr">Correctif du schéma du dépôt Kodi : restauration du bloc &lt;dir&gt; requis par Kodi 21 et incrémentation du dépôt en 1.0.1 pour forcer la réinstallation.</news>
+        <news lang="en">Kodi repository schema fix: restored the &lt;dir&gt; block required by Kodi 21 and bumped the repository to 1.0.1 to force reinstall/update.</news>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="repository.don24crkrepository1" name="Don24crk Repository" version="1.0" provider-name="don24crk">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -982,6 +1009,26 @@ Supported By PPV.LAND.
 			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
+</addon>
+
+<addon id="repository.xvault" name="xVAULT Repository" provider-name="xVAULT" version="1.0.2">
+    <extension point="xbmc.addon.repository" name="xVAULT Repository">
+        <dir>
+            <info compressed="false">http://xvault.ddnss.de/addons.xml</info>
+            <checksum>http://xvault.ddnss.de/addons.xml.md5</checksum>
+            <datadir zip="true">http://xvault.ddnss.de/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Offizielles xVAULT Kodi-Repository</summary>
+        <summary lang="en_GB">Official xVAULT Kodi repository</summary>
+        <description lang="de_DE">Stellt xVAULT-Updates ueber Kodi bereit.</description>
+        <description lang="en_GB">Provides xVAULT updates through Kodi.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="plugin.video.s4me" name="Stream4Me" version="1.7.8" provider-name="S4Me Team">
