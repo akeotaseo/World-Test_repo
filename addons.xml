@@ -964,6 +964,42 @@ Supported By PPV.LAND.
 	</extension>
 </addon>
 
+<addon id="repository.vortex" name="Vortex Repo" version="1.0" provider-name="">
+<extension point="xbmc.addon.repository" name="Vortex Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/vortex-repo/101/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/vortex-repo/101/master/addons.xml.md5</checksum>
+			<datadir zip="false">https://raw.githubusercontent.com/vortex-repo/101/master/plugins/</datadir>
+		</dir>
+
+		<dir>
+		    <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		    <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		    <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		</dir>
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<dir>
+            <info compressed="false">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Vortex Repo</summary>
+		<description></description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+        </assets>
+	</extension>
+</addon>
+
 <addon id="repository.vseryi4kodi"
        name="VSeryi4Kodi Repository"
        version="1.0.0"
