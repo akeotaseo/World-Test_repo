@@ -1114,18 +1114,30 @@ Supported By PPV.LAND.
     </extension>
 </addon>
 
-<addon id="service.subtitles.gemeni" name="gemeni" version="1.0.2" provider-name="gemeni">
+<addon id="service.subtitles.gemini1" name="Gemini AI Subtitles Provider" version="1.2.3" provider-name="AI-Dev">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.25.1"/>
+        <import addon="resource.images.languageflags.colour" version="0.0.1"/>
     </requires>
-    <extension point="xbmc.subtitle.module" library="service.py" listitemmonitor="true"/>
+
+    <!-- 🔥 ÎNREGISTRARE STRICTĂ CA MODUL DE SUBTITRĂRI KODI -->
+    <extension point="xbmc.subtitle.module" library="service.py" languages="Romanian"/>
+
     <extension point="xbmc.addon.metadata">
-        <summary lang="ro">Subtitrări de pe OpenSubtitles traducere gemeni (2026)</summary>
+        <summary lang="ro">Traducere instantă din interfața Kodi cu Google Gemini AI</summary>
+        <summary lang="en_GB">Instant translation from Kodi UI with Google Gemini AI</summary>
+        <description lang="ro">Apare direct în lista de subtitrări a playerului Kodi. Extrage pistele text/audio via FFmpeg stream pe server și returnează fișierul tradus la cerere.</description>
+        <description lang="en_GB">Appears directly in the Kodi player subtitle list. Extracts text/audio tracks via remote FFmpeg stream and returns the translated file on demand.</description>
+        <disclaimer lang="ro">Acest addon procesează datele folosind cheile tale private trimise către un server local FFmpeg.</disclaimer>
+        <disclaimer lang="en_GB">This addon processes data using your private keys sent to a local FFmpeg server.</disclaimer>
+        <language>ro_RO en_GB</language>
         <platform>all</platform>
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
+        <license>GPL-2.0-only</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
     </extension>
 </addon>
 
