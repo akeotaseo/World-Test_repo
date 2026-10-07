@@ -310,28 +310,31 @@ IMPORTANTE: Requiere instalar previamente:
 
 <addon id="plugin.video.GreekTV"
        name="GreekTV By don24crk"
-       version="1.5"
+       version="1.11"
        provider-name="don24crk">
   <requires>
+    <!-- Setzt Python 3 voraus (Kompatibel mit Kodi 19, 20, 21 und 22) -->
     <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests"/>
-
+    <import addon="script.module.inputstreamhelper" version="0.8.5"/>
+    <import addon="inputstream.adaptive" version="21.5.23"/>
+    <import addon="plugin.video.youtube" version="7.4.4" optional="true"/>
+    <import addon="plugin.video.dailymotion_com" version="2.4.5" optional="true"/>
   </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">GreekTV and VOD addon By don24crk</summary>
-        <description lang="en_GB">GreekTV By don24crk is an addon allowing streaming content available mostly in Greek language.</description>
-        <disclaimer lang="en_GB">GreekTV By don24crk's author does not host, stream or distribute any of the content displayed inside this software and cannot be held responsible for the quality or availability of the listed streams.
+    <summary lang="en_GB">GreekTV and VOD addon By don24crk</summary>
+    <description lang="en_GB">GreekTV By don24crk is an addon allowing streaming content available mostly in Greek language.</description>
+    <disclaimer lang="en_GB">GreekTV By don24crk's author does not host, stream or distribute any of the content displayed inside this software and cannot be held responsible for the quality or availability of the listed streams.
 On demand content is scraped from various websites and is freely available on the internet on public domains. This software acts only as a search engine.
 Kindly note that GreekTV By don24crk is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system and it is provided "as is" with no warranty.</disclaimer>
-     <platform>all</platform>
-	 <assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
+
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
