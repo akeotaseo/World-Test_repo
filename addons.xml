@@ -504,6 +504,29 @@ provider-name="ElSupremo">
 </extension>
 </addon>
 
+<addon id="plugin.video.mifutbol"
+       name="Pastu Furbo"
+       version="0.7.8"
+       provider-name="jaume">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="es">Canales deportivos via Acestream</summary>
+        <description lang="es">Addon personal para localizar y reproducir canales deportivos via Acestream. Agrupados por dia y competicion. Uso privado.</description>
+        <platform>all</platform>
+        <language>es</language>
+        <license>Personal</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.Moi" version="2.0.1" name="Moi Stream" provider-name="Moi">
     <extension point="xbmc.python.pluginsource" library="Moi.py">
         <provides>video</provides>
